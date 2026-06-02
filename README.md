@@ -1,18 +1,37 @@
 # softether-gui
-A GUI to help manage the installation and connection of the SoftEther client app on Linux.
 
-SoftEther Manager (softether-gui) is a Python/Tkinter graphical interface for Linux that simplifies:
+**SoftEther Manager** – A GUI to help manage the installation and connection of the SoftEther client app on Linux.
 
-Installing and setting up the SoftEther VPN Client from source,
+## Features
 
-Starting and stopping the SoftEther client daemon,
+- Install SoftEther VPN Client from source with a few clicks
+- Manage virtual network adapters
+- Create, edit, and delete VPN connection profiles
+- Connect/disconnect to SoftEther servers
+- Automatically handle DHCP and routing on Linux
+- Optional desktop launcher for one-click connection
 
-Creating and managing VPN connection profiles (accounts),
+## Requirements
 
-Connecting to and disconnecting from SoftEther VPN servers,
+- Linux (tested on Linux Mint / Ubuntu-based systems)
+- Python 3
+- Tkinter (`python3-tk` on Debian/Ubuntu)
+- `sudo` privileges
 
-Automatically handling Linux-specific steps like running DHCP and routing,
+## Installation
 
-Optionally providing a desktop launcher for one-click connection.
+```bash
+git clone https://github.com/YOUR_USERNAME/softether-gui.git
+cd softether-gui
+python3 -m pip install -r requirements.txt  # if you add dependencies later
+```
 
-It’s designed to make SoftEther on Linux nearly as easy to use as the Windows GUI, especially for users who want to connect to servers like VPN Gate (e.g., Japan) without typing multiple terminal commands.
+## Running
+
+```bash
+python3 -m semanager
+# or
+python3 main.py
+```
+
+
